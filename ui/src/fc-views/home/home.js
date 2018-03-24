@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './home.css';
+import contentBackground from './contentBackground.jpg';
 
 let state = {};
+
+let mainContentStyle = {
+  backgroundImage: `url(${contentBackground})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'auto 100%',
+  backgroundPosition: '70%'
+}
 
 class App extends Component {
 
@@ -34,6 +42,22 @@ class App extends Component {
           <span className='userNameInHeader'>
             varuner
           </span>
+        </div>
+        <div className='mainContent' style={mainContentStyle}>
+          <div className='userGreeting'>
+            <div className='userGreetingContent'>
+              <h2>GOOD MORNING</h2>
+              <h1>VARUN</h1>
+            </div>
+          </div>
+          <div className='card'>
+          </div>
+          <div className='card'>
+          </div>
+          <div className='card'>
+          </div>
+          <div className='card'>
+          </div>
         </div>
         <div className='footer'>
           <button className='footerButton'>&#9776;</button>
