@@ -27,13 +27,16 @@ class App extends Component {
   render() {
     return (
       <div id='MainContainer'>
-        <div id='Header' class='header'>
-          <span class='logoContainer'>
+        <div id='Header' className='header'>
+          <span className='logoContainer'>
             <img src={logo} className="App-logo" alt="logo" />    
           </span>
-          <span class='userNameInHeader'>
+          <span className='userNameInHeader'>
             varuner
           </span>
+        </div>
+        <div className='footer'>
+          <button className='footerButton'>&#9776;</button>
         </div>
         {/* <div className="App">
           <header className="App-header">

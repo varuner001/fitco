@@ -3,6 +3,7 @@
 }
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 
@@ -34,8 +35,10 @@ body {
 
 /* <Header UI> */
 .header {
+  box-sizing: border-box;
+  width: 100%;
   padding: 8px;
-  height: 40px;
+  height: 56px;
   background: #050505;
 }
 .header .App-logo {
@@ -52,3 +55,27 @@ body {
   padding-right: 16px;
 }
 /* >Header UI< */
+
+/* <Footer Button> */
+.footer {
+  margin: 0 auto;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.footerButton {
+  display: block;
+  margin: 0 auto 8px; 
+  background-color: #FFF;
+  border-radius: 50%;
+  border: 3px solid #050505;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+
+}
+
+/* >Footer Button< */
